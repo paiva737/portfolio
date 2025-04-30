@@ -1,0 +1,20 @@
+.about {
+    padding: 80px 20px;
+    background-color: #0A0A23;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
