@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './DirectContact.module.css';
-import { FaWhatsapp, FaEnvelope, FaLinkedin } from 'react-icons/fa';
+import { FaWhatsapp, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const DirectContact = () => {
   return (
@@ -15,6 +15,13 @@ const DirectContact = () => {
         </a>
         <a href="https://www.linkedin.com/in/rafael-paiva-472531235/?locale=en_US" target="_blank" rel="noopener noreferrer">
           <FaLinkedin />
+        </a>
+        <a
+          href="https://github.com/paiva737"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub />
         </a>
       </div>
     </section>

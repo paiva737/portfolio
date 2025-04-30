@@ -6,8 +6,16 @@ import Projects from './components/Projects/Projects';
 import Certificates from './components/Certificates/Certificates';
 import Contact from './components/Contact/Contact';
 import DirectContact from './components/DirectContact/DirectContact';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+  
   return (
     <div>
       <Hero />
