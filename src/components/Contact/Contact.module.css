@@ -1,0 +1,44 @@
+.contact {
+    padding: 80px 20px;
+    background-color: #0A0A23;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  input, textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #61dafb;
+    color: #000;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #4bbbe0;
+  }
+  
