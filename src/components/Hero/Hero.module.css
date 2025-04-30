@@ -1,11 +1,41 @@
 .hero {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #0A0A23; 
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  padding: 100px 60px;
+  background-color: #0A0A23;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text {
+  text-align: left;
+}
+
+.text h1 {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+}
+
+.text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #dddddd;
+  max-width: 500px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+
+.image img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #61dafb;
+}
