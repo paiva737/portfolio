@@ -13,8 +13,15 @@ import 'aos/dist/aos.css';
 
 function App() {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({
+      duration: 1000,
+      offset: 300,
+      easing: 'ease-in-out' ,
+      once: true,
+      anchorPlacement: 'top-bottom',
+    });
   }, []);
+  
   
   return (
     <div>
