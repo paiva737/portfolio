@@ -9,8 +9,8 @@
 .underline {
   height: 3px;
   background-color: #00d8ff;
-  width: 20%;
-  margin-left: 600px;
+  width: 18%;
+  margin-left: 625px;
 }
 .skills h2 {
   font-size: 2rem;
@@ -62,3 +62,5 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+
