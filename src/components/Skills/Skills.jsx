@@ -38,4 +38,5 @@ const Skills = () => {
   );
 };
 
+// sadasajdiajsia
 export default Skills;
