@@ -9,34 +9,39 @@ import {
   SiNodedotjs,
   SiBootstrap,
   SiMongodb,
+  SiGit,
+  SiGithub,
+  SiExpress
 } from 'react-icons/si';
-import { FaTools } from 'react-icons/fa'; 
-import 'aos/dist/aos.css';
+import { FaTools } from 'react-icons/fa';
 
 const Skills = () => {
   return (
     <section className={styles.skills} id="skills">
-      <h2 data-aos="fade-up" data-aos-offset="300" data-aos-duration="800">
-      <FaTools style={{ marginRight: '8px' }} />
-        Habilidades
-      </h2>
-      <div className={styles.underline} data-aos="fade-up" data-aos-offset="300" data-aos-duration="800"></div>
-
-      <div className={styles.circle} data-aos="zoom-in" data-aos-offset="300" data-aos-duration="1000">
+      <h2><FaTools /> Habilidades</h2>
+      <div className={styles.underline}></div>
+      <div
+        className={styles.circle}
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-offset="200"
+      >
         <div className={styles.rotate}>
-          <div className={styles.item}><SiHtml5 color="#E44D26" title="HTML5"/></div>
-          <div className={styles.item}><SiCss3 color="#1572b6" title="CSS3" /></div>
-          <div className={styles.item}><SiJavascript color="#F7DF1E" title="JavaScript" /></div>
-          <div className={styles.item}><SiReact color="#61DAFB" title="React" /></div>
-          <div className={styles.item}><SiTypescript color="#3178C6" title="TypeScript" /></div>
-          <div className={styles.item}><SiNodedotjs color="#68A063" title="Node.js" /></div>
-          <div className={styles.item}><SiBootstrap color="#7952B3" title="Bootstrap" /></div>
-          <div className={styles.item}><SiMongodb color="#47A248" title="MongoDB" /></div>
+          <div className={styles.item}><div className={styles.iconWrapper}><SiHtml5 color="#E44D26" /><span className={styles.tooltip}>HTML5</span></div></div>
+          <div className={styles.item}><div className={styles.iconWrapper}><SiCss3 color="#1572b6" /><span className={styles.tooltip}>CSS3</span></div></div>
+          <div className={styles.item}><div className={styles.iconWrapper}><SiJavascript color="#F7DF1E" /><span className={styles.tooltip}>JavaScript</span></div></div>
+          <div className={styles.item}><div className={styles.iconWrapper}><SiReact color="#61DAFB" /><span className={styles.tooltip}>React</span></div></div>
+          <div className={styles.item}><div className={styles.iconWrapper}><SiTypescript color="#3178C6" /><span className={styles.tooltip}>TypeScript</span></div></div>
+          <div className={styles.item}><div className={styles.iconWrapper}><SiNodedotjs color="#68A063" /><span className={styles.tooltip}>Node.js</span></div></div>
+          <div className={styles.item}><div className={styles.iconWrapper}><SiBootstrap color="#7952B3" /><span className={styles.tooltip}>Bootstrap</span></div></div>
+          <div className={styles.item}><div className={styles.iconWrapper}><SiMongodb color="#47A248" /><span className={styles.tooltip}>MongoDB</span></div></div>
+          <div className={styles.item}><div className={styles.iconWrapper}><SiGit color="#F1502F" /><span className={styles.tooltip}>Git</span></div></div>
+          <div className={styles.item}><div className={styles.iconWrapper}><SiGithub color="#ffffff" /><span className={styles.tooltip}>GitHub</span></div></div>
+          <div className={styles.item}><div className={styles.iconWrapper}><SiExpress color="#ffffff" /><span className={styles.tooltip}>ExpressJS</span></div></div>
         </div>
       </div>
     </section>
   );
 };
 
-// sadasajdiajsia
 export default Skills;
