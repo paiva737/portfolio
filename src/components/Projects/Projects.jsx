@@ -21,25 +21,25 @@ const projects = [
     url: 'https://github.com/paiva737/Watch-It'
   },
   {
-    name: 'FormBanco',
+    name: 'Banco Digital',
     description: 'projeto que simula uma interface de banco digital, desenvolvendo páginas responsivas e interativas que oferecem uma experiência simples e eficiente para o usuário.',
     image: formBancoImg,
     url: 'https://github.com/paiva737/FormBanco'
   },
   {
-    name: 'jogodaforca',
+    name: 'Jogo da Forca',
     description: 'Brincadeira do Jogo da forca da qual você tem que acertar a palavra oculta',
     image:  jogoDaForcaImg,
     url: 'https://github.com/paiva737/jogodaforca'
   },
   {
-    name: 'SiteReact',
+    name: 'Site React',
     description: 'projeto super interessante utilizando ReactJS, onde construí uma aplicação que permite cadastrar linguagens de programação como cards, com funcionalidades.',
     image: siteReactImg,
     url: 'https://github.com/paiva737/SiteReact'
   },
   {
-    name: 'Cota-oMoeda',
+    name: 'Cotação Moeda',
     description: 'Verifique cotações de moedas em tempo real.',
     image: cotaMoedaImg,
     url: 'https://github.com/paiva737/Cota-oMoeda'
