@@ -1,6 +1,8 @@
 body{
   background-color: #0A0A23;
 }
+
+
 .timeline {
   padding: 80px 20px;
   background-color: #0A0A23;
@@ -66,9 +68,9 @@ body{
 
 .content {
   background-color: #1a1a2e;
-  padding: 20px;
+  padding: 50px;
   border-radius: 10px;
-  animation: borderPulse 3s infinite;
+  animation: borderPulse 1.5s infinite;
   width: 100%;
 }
 
@@ -88,4 +90,18 @@ body{
   font-size: 0.9rem;
   color: #dddddd;
   margin-bottom: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  border-radius: 4px;
 }
