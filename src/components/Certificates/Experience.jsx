@@ -39,7 +39,7 @@ const experienceData = [
   },
   {
     title: 'Rocketseat Education',
-    period: '2023',
+    period: '2024-2025',
     institution: 'Rocketseat',
     description: 'Participei de formações e imersões na Rocketseat, com foco em tecnologias modernas para desenvolvimento web. Durante os cursos, aprofundei meus conhecimentos em Git, GitHub, JavaScript, CSS, HTML5 e React, explorando boas práticas de codificação, versionamento e criação de interfaces dinâmicas. A abordagem prática e direta da plataforma contribuiu significativamente para minha evolução como desenvolvedor.',
     logo: rocketseatlogo,
