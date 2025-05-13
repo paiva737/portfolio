@@ -14,12 +14,15 @@ import 'aos/dist/aos.css';
 
 function App() {
   useEffect(() => {
+    const isMobile = window.innerWidth <= 768;
+  
     AOS.init({
-      duration: 1000,
-      offset: 300,
+      duration: isMobile ? 500 : 1000,
+      offset: isMobile ? 80 : 300,
       easing: 'ease-in-out',
       once: true,
       anchorPlacement: 'top-bottom',
+      startEvent: 'DOMContentLoaded',
     });
   }, []);
 

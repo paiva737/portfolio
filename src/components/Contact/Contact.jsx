@@ -29,7 +29,8 @@ const Contact = () => {
         </div>
 
         <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="http://localhost:3000/#/obrigado" />
+        <input type="hidden" name="_next" value="https://rafaelpaiva-portfolio.vercel.app/#/obrigado" />
+
         
         <button type="submit">Enviar</button>
 
