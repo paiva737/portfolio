@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Hero.module.css';
 import minhaFoto from '../../assets/foto.jpeg';
+import TypewriterText from './TypewriterText';
+
 
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -27,8 +29,14 @@ const Hero = () => {
             'data-aos': 'fade-up',
             'data-aos-delay': '250',
           })}
-        >
-          <h1>Olá, eu sou Rafael Paiva</h1>
+                  >
+                  <TypewriterText
+            texts={[
+              'Olá, eu sou Rafael Paiva',
+             
+            ]}
+          />
+
           <div className={styles.underline}></div>
           <p>
             Desenvolvedor Front-end focado em criar experiências modernas e responsivas.
