@@ -4,6 +4,7 @@
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    background: linear-gradient(to left, #0a0a23, #0a0a23 70%, #0a1c33);
   }
   
   .direct h2 {
