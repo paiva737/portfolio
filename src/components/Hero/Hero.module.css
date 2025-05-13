@@ -22,8 +22,12 @@
 
 
 .text {
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
 }
+
 
 .text h1 {
   font-size: 3.5rem;
@@ -57,5 +61,88 @@
   margin-top: 8px;
   width: 100%;
 }
+.button {
+  position: relative;
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: #0A0A23;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
 
+}
+.button::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 12px;
+  background: conic-gradient(from 0deg, #00ffff, #006eff, #00ffff);
+  filter: blur(4px);
+  animation: spinBorder 2s linear infinite;
+  z-index: -1;
+}
+
+
+@keyframes spinBorder {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.button:hover {
+  background-color: #4bbbe0;
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .text h1 {
+    font-size: 2rem;
+  }
+
+  .text p {
+    font-size: 1rem;
+  }
+
+  .image img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .underline {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .button {
+   text-align: center;
+    width: 100%;
+    max-width: 250px;
+  }
+}
 
