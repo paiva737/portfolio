@@ -67,6 +67,9 @@
 .item:nth-child(9)  { transform: rotate(264deg) translateY(-190px) rotate(-264deg); }
 .item:nth-child(10) { transform: rotate(297deg) translateY(-190px) rotate(-297deg); }
 .item:nth-child(11) { transform: rotate(330deg) translateY(-190px) rotate(-330deg); }
+.item:nth-child(12) { transform: rotate(360deg) translateY(-190px) rotate(-360deg); }
+.item:nth-child(13) { transform: rotate(390deg) translateY(-190px) rotate(-390deg); }
+
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
