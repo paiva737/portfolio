@@ -56,19 +56,20 @@
 }
 
 
-.item:nth-child(1)  { transform: rotate(0deg)   translateY(-190px) rotate(-0deg); }
-.item:nth-child(2)  { transform: rotate(33deg)  translateY(-190px) rotate(-33deg); }
-.item:nth-child(3)  { transform: rotate(66deg)  translateY(-190px) rotate(-66deg); }
-.item:nth-child(4)  { transform: rotate(99deg)  translateY(-190px) rotate(-99deg); }
-.item:nth-child(5)  { transform: rotate(132deg) translateY(-190px) rotate(-132deg); }
-.item:nth-child(6)  { transform: rotate(165deg) translateY(-190px) rotate(-165deg); }
-.item:nth-child(7)  { transform: rotate(198deg) translateY(-190px) rotate(-198deg); }
-.item:nth-child(8)  { transform: rotate(231deg) translateY(-190px) rotate(-231deg); }
-.item:nth-child(9)  { transform: rotate(264deg) translateY(-190px) rotate(-264deg); }
-.item:nth-child(10) { transform: rotate(297deg) translateY(-190px) rotate(-297deg); }
-.item:nth-child(11) { transform: rotate(330deg) translateY(-190px) rotate(-330deg); }
-.item:nth-child(12) { transform: rotate(360deg) translateY(-190px) rotate(-360deg); }
-.item:nth-child(13) { transform: rotate(390deg) translateY(-190px) rotate(-390deg); }
+.item:nth-child(1)  { transform: rotate(0deg) translateY(-190px) rotate(-0deg); }
+.item:nth-child(2)  { transform: rotate(27.7deg) translateY(-190px) rotate(-27.7deg); }
+.item:nth-child(3)  { transform: rotate(55.4deg) translateY(-190px) rotate(-55.4deg); }
+.item:nth-child(4)  { transform: rotate(83.1deg) translateY(-190px) rotate(-83.1deg); }
+.item:nth-child(5)  { transform: rotate(110.8deg) translateY(-190px) rotate(-110.8deg); }
+.item:nth-child(6)  { transform: rotate(138.5deg) translateY(-190px) rotate(-138.5deg); }
+.item:nth-child(7)  { transform: rotate(166.2deg) translateY(-190px) rotate(-166.2deg); }
+.item:nth-child(8)  { transform: rotate(193.9deg) translateY(-190px) rotate(-193.9deg); }
+.item:nth-child(9)  { transform: rotate(221.6deg) translateY(-190px) rotate(-221.6deg); }
+.item:nth-child(10) { transform: rotate(249.3deg) translateY(-190px) rotate(-249.3deg); }
+.item:nth-child(11) { transform: rotate(277deg) translateY(-190px) rotate(-277deg); }
+.item:nth-child(12) { transform: rotate(304.7deg) translateY(-190px) rotate(-304.7deg); }
+.item:nth-child(13) { transform: rotate(332.4deg) translateY(-190px) rotate(-332.4deg); }
+
 
 
 @keyframes spin {
