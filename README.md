@@ -33,7 +33,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - AOS
 
 ## 💻 Projeto
-Link para visualizar: https://rafaelpaiva-portfolio.vercel.app/#/
+Link para visualizar: rafaelpaivadev.com.br
 
 Esse é o projeto do meu atual portfólio, onde usarei para exibir meus projetos.
 
