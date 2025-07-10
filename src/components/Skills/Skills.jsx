@@ -11,6 +11,8 @@ import {
   SiMongodb,
   SiGit,
   SiGithub,
+  SiVuedotjs,
+  SiAngular,
   SiExpress
 } from 'react-icons/si';
 import { FaTools } from 'react-icons/fa';
@@ -38,6 +40,8 @@ const Skills = () => {
           <div className={styles.item}><div className={styles.iconWrapper}><SiGit color="#F1502F" /><span className={styles.tooltip}>Git</span></div></div>
           <div className={styles.item}><div className={styles.iconWrapper}><SiGithub color="#ffffff" /><span className={styles.tooltip}>GitHub</span></div></div>
           <div className={styles.item}><div className={styles.iconWrapper}><SiExpress color="#ffffff" /><span className={styles.tooltip}>ExpressJS</span></div></div>
+          <div className={styles.item}><div className={styles.iconWrapper}><SiVuedotjs color="#42b883" /><span className={styles.tooltip}>Vue.js</span></div></div>
+          <div className={styles.item}><div className={styles.iconWrapper}><SiAngular color="#dd0031" /><span className={styles.tooltip}>Angular</span></div></div>
         </div>
       </div>
     </section>
