@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import 'aos/dist/aos.css';
 import styles from './Projects.module.css';
 import paivaTechImg from '../../assets/Paiva-Tech.png';
@@ -7,6 +7,8 @@ import formBancoImg from '../../assets/FormBanco.png';
 import jogoDaForcaImg from '../../assets/jogodaforca.png';
 import siteReactImg from '../../assets/SiteReact.png';
 import cotaMoedaImg from '../../assets/Cota-oMoeda.png';
+import AOS from 'aos';
+
 const projects = [
   {
     name: 'Paiva-Tech',
@@ -47,13 +49,31 @@ const projects = [
 ];
 
 const Projects = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mobile = window.innerWidth < 768;
+    setIsMobile(mobile);
+
+    if (!mobile) {
+      AOS.init();
+    }
+  }, []);
+
   return (
-    <section className={styles.projects} id="projects" data-aos-offset="200">
+    <section className={styles.projects} id="projects" {...(!isMobile && { 'data-aos-offset': '200' })}>
       <h2><span role="img" aria-label="foguete">🚀</span> Projetos em Destaque</h2>
       <div className={styles.underline}></div>
       <div className={styles.grid}>
         {projects.map((project, index) => (
-          <a href={project.url} key={index} target="_blank"   data-aos="fade-up" rel="noopener noreferrer" className={styles.card}>
+          <a
+            href={project.url}
+            key={index}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.card}
+            {...(!isMobile && { 'data-aos': 'fade-up' })}
+          >
             <img src={project.image} alt={project.name} />
             <h3>{project.name}</h3>
             <p>{project.description}</p>
