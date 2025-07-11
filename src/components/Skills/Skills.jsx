@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './Skills.module.css';
 import {
   SiHtml5,
@@ -18,15 +18,23 @@ import {
 import { FaTools } from 'react-icons/fa';
 
 const Skills = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 768);
+  }, []);
+
   return (
     <section className={styles.skills} id="skills">
       <h2><FaTools /> Habilidades</h2>
       <div className={styles.underline}></div>
       <div
         className={styles.circle}
-        data-aos="fade-up"
-        data-aos-duration="800"
-        data-aos-offset="200"
+        {...(!isMobile && {
+          'data-aos': 'fade-up',
+          'data-aos-duration': '800',
+          'data-aos-offset': '200'
+        })}
       >
         <div className={styles.rotate}>
           <div className={styles.item}><div className={styles.iconWrapper}><SiHtml5 color="#E44D26" /><span className={styles.tooltip}>HTML5</span></div></div>
