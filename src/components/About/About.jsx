@@ -4,7 +4,11 @@ import fotoFormatura from '../../assets/fotoFormatura.JPG';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { FaUserTie } from 'react-icons/fa';
-AOS.init();
+
+
+if (window.innerWidth >= 768) {
+  AOS.init();
+}
 
 const About = () => {
   return (

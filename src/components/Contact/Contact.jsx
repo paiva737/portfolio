@@ -5,13 +5,16 @@ import styles from './Contact.module.css';
 
 const Contact = () => {
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      offset: 300,
-      easing: 'ease-in-out',
-      once: true,
-      anchorPlacement: 'top-bottom',
-    });
+if (window.innerWidth >= 768) {
+  AOS.init({
+    duration: 1000,
+    offset: 300,
+    easing: 'ease-in-out',
+    once: true,
+    anchorPlacement: 'top-bottom',
+  });
+}
+
   }, []);
 
   return (
