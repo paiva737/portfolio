@@ -1,24 +1,32 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import styles from './Contact.module.css';
 
 const Contact = () => {
-  useEffect(() => {
-if (window.innerWidth >= 768) {
-  AOS.init({
-    duration: 1000,
-    offset: 300,
-    easing: 'ease-in-out',
-    once: true,
-    anchorPlacement: 'top-bottom',
-  });
-}
+  const [isMobile, setIsMobile] = useState(false);
 
+  useEffect(() => {
+    const mobile = window.innerWidth < 768;
+    setIsMobile(mobile);
+
+    if (!mobile) {
+      AOS.init({
+        duration: 1000,
+        offset: 300,
+        easing: 'ease-in-out',
+        once: true,
+        anchorPlacement: 'top-bottom',
+      });
+    }
   }, []);
 
   return (
-    <section className={styles.contact} id="contact" data-aos="fade-up">
+    <section
+      className={styles.contact}
+      id="contact"
+      {...(!isMobile && { 'data-aos': 'fade-up' })}
+    >
       <h2>Contato</h2>
       <form action="https://formsubmit.co/rafaelpaiva636@gmail.com" method="POST">
         <div className={styles.inputWrapper}>
@@ -34,9 +42,7 @@ if (window.innerWidth >= 768) {
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_next" value="https://rafaelpaiva-portfolio.vercel.app/#/obrigado" />
 
-        
         <button type="submit">Enviar</button>
-
       </form>
     </section>
   );
